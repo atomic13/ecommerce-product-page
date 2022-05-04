@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="menu-icon">
+          <button id="open"><img src="images/icon-menu.svg" alt="" /></button>
+          <button id="close" class="hide-icon">
+            <img src="images/icon-close.svg" alt="" />
+          </button>
+        </div>
+        <ul id="nav" class="">
+          <li><a href="">Collections</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="logo"><img src="images/logo.svg" alt="logo" /></div>
+      </nav>
+
+      <div class="user">
+        <div id="cartbtn">
+          <img src="images/icon-cart.svg" alt="cart icon" />
+        </div>
+        <div class="profile">
+          <a href=""
+            ><img src="images/image-avatar.png" alt="profile avatar"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="gallery">
+        <div class="slides">
+          <div class="slide active">
+            <img src="images/image-product-1.jpg" alt="shoes" />
+          </div>
+          <div class="slide">
+            <img src="images/image-product-2.jpg" alt="shoes" />
+          </div>
+          <div class="slide">
+            <img src="images/image-product-3.jpg" alt="shoes" />
+          </div>
+          <div class="slide">
+            <img src="images/image-product-4.jpg" alt="shoes" />
+          </div>
+
+          <div id="prev" class="sliderBtn">
+            <img src="images/icon-previous.svg" alt="" />
+          </div>
+          <div id="next" class="sliderBtn">
+            <img src="images/icon-next.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="thumbnail" id="thumbnail">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" id="1" />
+          <img src="images/image-product-2-thumbnail.jpg" alt="" id="2" />
+          <img src="images/image-product-3-thumbnail.jpg" alt="" id="3" />
+          <img src="images/image-product-4-thumbnail.jpg" alt="" id="4" />
+        </div>
+      </div>
+      <div class="about">
+        <span id="heading">Sneaker Company</span>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <div class="offer">$125.00 <span id="discount">50%</span></div>
+          <span id="original-price">$250.00</span>
+        </div>
+        <div class="add-to-cart">
+          <button id="minus"><img src="images/icon-minus.svg" alt="" /></button>
+          <span id="amount">0</span>
+          <button id="plus"><img src="images/icon-plus.svg" alt="" /></button>
+        </div>
+        <div>
+          <button id="btn-add" class="btn-primary">
+            <img src="images/icon-cart.svg" alt="" /> Add to cart
+          </button>
+        </div>
+      </div>
+      <div id="cart">
+        <h3>Cart</h3>
+        <div class="product">Your cart is empty.</div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/atomic13" target="_blank">atomic</a>.
+    </div>
+
+    <div id="overlay"></div>
+  </body>
+</html>
