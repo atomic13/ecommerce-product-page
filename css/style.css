@@ -313,7 +313,7 @@ header #cartbtn {
 
 @media only screen and (min-width: 768px) {
   .about {
-    width: 30%;
+    width: 35%;
     padding: 3.5rem 2rem;
   }
   .about h1 {
